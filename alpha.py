@@ -43,6 +43,7 @@ def find_beta(tickers):
     print(beta_grid['mean'])
 
     data_all.plot()
+    plt.legend(labels=tickers)
     plt.axhline(y=0, color='b', linestyle='-')
     plt.title('Intramonth Percent Change of Outlined Stocks: ' + str(tickers))
     plt.show()
